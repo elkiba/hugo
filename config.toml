@@ -1,0 +1,86 @@
+baseurl = "http://el-ki-ba.info/"
+languageCode = "de-de"
+title = "El-Ki-Ba"
+theme = "hugo-creative-theme"
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
+
+	# All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
+
+	# All projects of the portfolio are defined in their own files.
+	# You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
+	# folder into the 'data' directory at the root of this Hugo site.
+	# For more informtion take a look at the README.
+
+	# To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+	name = "Your name"
+	description = "Your description"
+
+	# The path must be relative to the static folder
+	favicon = "favicon.ico"
+
+
+	# Navigation
+	[params.navigation]
+		brand = "El-Ki-Ba"
+
+		[params.navigation.links]
+			about     = "Über diese Seite"
+			services  = "Angebot"
+			contact   = "Kontakt"
+
+	# Hero section
+	[params.hero]
+		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
+		slogan     = "Willkommen in der Kita Bahrfeldtstrasse!"
+		subtitle   = "es gibt nichts Gutes, außer man tut es..."
+		buttonText = "Angebot"
+
+	# Service section
+	[params.services]
+		headline = "Angebot"
+
+	[[params.services.list]]
+	    icon = "fa-mail-forward"
+            title = "Mailingliste"
+            description = "Unsere primäre Kommunikation ist Email<p/>Anmeldung und Abmeldung sind automatisiert, schreibe dem fleissigen Roboter einfach eine Email, es kommt dann sofort eine Bestätigungsmail, die ihr noch einmal beantworten müsst."
+	    href = "mailto:eltern-subscribe@el-ki-ba.info"
+
+        [[params.services.list]]
+            icon = "fa-video-camera"
+            title = "Bilder"
+            description = "Die Kita-Fototauschbörse<p>Anmeldung dann oben links das Symbol anklicken.<p/> Das Löschen von Bildern ist explizit erlaubt."
+            href = "http://el-ki-ba.info/bilder"
+
+	[[params.services.list]]
+            icon = "fa-newspaper-o"
+            title = "Themen"
+            description = "Was ist gerade aktuell?<p/>Fehlt was, dann [fangt eins an](http://mitmachen.el-ki-ba.info)"
+            href = "http://mitmachen.el-ki-ba.info/pad-lister"
+
+        [[params.services.list]]
+            icon = "fa-shopping-basket"
+            title = "Windelvlies"
+            description = "Dein Kind ist im Nest?"
+            href = "http://mitmachen.el-ki-ba.info/p/Windelvlies"
+
+        [[params.services.list]]
+            icon = "fa-heart"
+            title = "Springerliste"
+            description = "Stehst Du drauf?"
+            href = "http://mitmachen.el-ki-ba.info/p/Springerliste"
+
+
+
+	# About section
+	[params.about]
+		headline    = "Über diese Seite"
+		description = "Diese Seite ist von den Elternvertretern und unabhängig vom HVD.<p/>Sie ist gedacht als Mitmachseite, wir freuen uns sehr, wenn auch Du Dich hier einbringst. Praktisch alles ist hinter einem Passwort, guckt mal auf euren Flyer.<p/>Ansonsten [schreibt uns](mailto:ev@el-ki-ba.info)"
+		buttonText  = "Alles klar!"
+
